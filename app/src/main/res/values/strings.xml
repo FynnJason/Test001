@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Test001</string>
+    <string name="test_sort">代码题-排序</string>
+    <string name="test_excel">代码题-二维表格</string>
+    <string name="input">输入数组</string>
+    <string name="output">输出数组</string>
+    <string name="sure">完成</string>
+    <string name="sort_hint">以逗号隔开,例如：安卓开发,1b,answer,reference,1a</string>
+    <string name="sort_example">安卓开发,1b,answer,reference,1a</string>
+</resources>

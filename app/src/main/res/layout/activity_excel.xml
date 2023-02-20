@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_excel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExcelActivity">
+
+    <!--标题行-->
+    <FrameLayout
+        android:id="@+id/layout_excel_row_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_excel_row_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/tv_excel_row_title"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_row_title_frame"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <!--标题内容-->
+    <com.example.test001.widget.FJNestedScrollView
+        android:id="@+id/scroll_excel_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:layout_below="@+id/layout_excel_row_title">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_excel_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+
+    </com.example.test001.widget.FJNestedScrollView>
+
+
+    <!--标题列-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_excel_column_title"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_excel_row_title"
+        android:overScrollMode="never" />
+</RelativeLayout>

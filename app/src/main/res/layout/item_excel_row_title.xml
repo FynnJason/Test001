@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_excel_row_title"
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:background="@drawable/shape_row_title_frame"
+    android:gravity="center"
+    android:textColor="@color/black"
+    android:textSize="12sp"
+    android:textStyle="bold" />
